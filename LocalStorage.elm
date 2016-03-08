@@ -22,7 +22,6 @@ limited to string keys and values. It uses Elm Tasks for storage IO.
 -}
 
 import Native.LocalStorage
-import String
 import Task exposing (Task, andThen, succeed, fail)
 import Json.Decode as Json
 import Maybe exposing (Maybe(..))
