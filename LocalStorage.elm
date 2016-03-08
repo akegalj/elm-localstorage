@@ -7,6 +7,9 @@ module LocalStorage
 This library offers rudimentary access to the browser's localStorage, which is
 limited to string keys and values. It uses Elm Tasks for storage IO.
 
+# Definition
+@docs Error
+
 # Retrieving
 @docs get, getJson
 
@@ -23,6 +26,13 @@ import String
 import Task exposing (Task, andThen, succeed, fail)
 import Json.Decode as Json
 import Maybe exposing (Maybe(..))
+
+{-|
+
+ Error
+
+-}
+
 
 type Error
   = NoStorage
